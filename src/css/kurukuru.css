@@ -1,0 +1,17 @@
+.kurukuru div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 300%;
+  color: rgb(88, 145, 182);
+}
+
+.disable div {
+  opacity: 0;
+}
+
+.enable div {
+  opacity: 1;
+}

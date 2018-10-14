@@ -1,0 +1,66 @@
+.form {
+  padding: 2vmin;
+  overflow: hidden;
+  display: grid;
+  grid-gap: 2vmin;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr 1fr 2fr;
+  background: #fff;
+}
+
+.title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 300%;
+}
+
+.rawTextArea {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.buttonArea {
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2vmin;
+}
+.button {
+  transition: 0.5s;
+  background: var(--mainColor);
+  display: flex;
+  border-radius: 2vmin;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.button:hover {
+  background: var(--subColor);
+}
+.button:active {
+  background: rgb(86, 164, 134);
+}
+.ab {
+  background: #000;
+}
+
+.hashTextArea {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.textArea {
+  padding: 1vmin;
+  border-radius: 2vmin 2vmin 0 0;
+  background: #f0f0f0;
+  border: 0;
+  border-bottom: 0.2vmin solid var(--subColor);
+  outline-width: 0;
+  font-size: 150%;
+}
