@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const path = require('path');
 const glob = require('glob');
 const minifyPlugin = require("babel-minify-webpack-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const htmlWebpackPlugin = require('html-webpack-plugin');
 
 const enabledSourceMap = true;
 const entry = {}
@@ -28,6 +28,9 @@ module.exports = {
   plugins: [
     new minifyPlugin({}, {
       test: /\.js$/,
+    }),
+    new htmlWebpackPlugin({
+      template: "./src/index.html"
     })
   ],
 
@@ -36,7 +39,7 @@ module.exports = {
       {
         test: /\.html$/,
         include: path.resolve(__dirname, 'src'),
-        loader: 'file?name=[name].[ext]'
+        loader: 'html-loader'
       },
       {
         test: /\.js$/,
