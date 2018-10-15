@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "watch": "webpack-cli --watch",
     "dev": "yarn run watch & yarn run start",
-    "postinstall": "webpack-cli & yarn start"
+    "postinstall": "set PATH $PATH $PWD/node_modules/.bin/ & webpack-cli & yarn start"
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
@@ -37,6 +37,6 @@
     "react-dom": "^16.5.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.2"
   }
 }
