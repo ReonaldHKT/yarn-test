@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "watch": "webpack-cli --watch",
     "dev": "yarn run watch & yarn run start",
-    "postinstall": "set PATH $PATH $PWD/node_modules/.bin/ & webpack-cli & yarn start"
+    "postinstall": "yarn run webpack-cli & yarn start"
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
