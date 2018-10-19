@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "watch": "webpack-cli --watch",
     "dev": "yarn run watch & yarn run start",
-    "heroku-prebuild": "yarn run webpack-cli",
+    "heroku-prebuild": "yarn & yarn run webpack-cli",
     "heroku-postbuild": "yarn start"
   },
   "dependencies": {
